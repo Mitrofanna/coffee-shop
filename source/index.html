@@ -2,12 +2,12 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Drink2GO</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body">
-    <header class="header">
+  <body class="page">
+    <header class="page__header header">
       <nav class="navigation">
         <a class="navigation__link" href="#">
           <img class="navigation__logo" src="#" height="#" width="#" alt="Логотип магазина 'Drink2GO'.">
@@ -31,16 +31,29 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="page__main">
     <h1 class="visually-hidden">Магазин кофейных напитков.</h1>
     <section class="promo">
-      <img class="promo__image" src="#" width="#" height="#" alt="кофейный напиток в бежевой банке.">
+      <picture>
+        <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/promo-coffee-tablet.webp 1x, img/content/promo-coffee-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/content/promo-coffee-tablet.webp 1x, img/content/promo-coffee-desktop@2x.webp 2x">
+        <source type="image/webp" srcset="img/content/promo-coffee.webp 1x, img/content/promo-coffee2x.webp 2x">
+        <source media="(min-width: 1440px)" srcset="./img/content/promo-coffee-desktop.jpg 1x, ./img/content/promo-coffee-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="./img/content/promo-coffee-tablet.jpg 1x, ./img/content/promo-coffee-tablet@2x.jpg 2x">
+        <img class="promo__image" src="./img/content/promo-cofee.png" srcset="./img/content/promo-cofee@x2.png" width="#" height="#" alt="кофейный напиток в бежевой банке.">
+      </picture>
       <span class="promo__about">Новинка!</span>
       <h2 class="promo__title">Декаф флэт уайт</h2>
       <p class="promo__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
       <span class="promo__price">295₽</span>
       <span class="promo__discount-price">225₽</span>
       <button class="promo__button" type="button">Заказать.</button>
+      <button class="promo__button--right" type="button">
+        <span class="visually-hidden">Листать направо.</span>
+      </button>
+      <button class="promo__button--left" type="button">
+        <span class="visually-hidden">Листать налево.</span>
+      </button>
     </section>
     <section class="advantages">
       <h2 class="advantages__title">Преимущества</h2>
@@ -118,8 +131,12 @@
           </select>
           <ul class="card-list">
               <li class="card-list__item">
+                <a class="card-list__link" href="#">
                   <img class="card-list__image" src="#" width="#" height="#" alt="#">
+                </a>
+                <a class="card-list__link" href="#">
                   <h3 class="card-list__item">Декаф Флэт Уайт</h3>
+                </a>
                   <p class="card-list__description">Кофе без кофеина из Эфиопии
                       с натуральным фермерским молоком</p>
                   <span class="card-list__price">225₽</span>
@@ -145,7 +162,7 @@
           </li>
       </ul>
       <div class="map"></div>
-      <footer class="footer">
+      <footer class="page__footer footer">
           <div class="footer__info">
               <a class="footer__logo" href="#">
                   <span class="visually-hidden">Логотип магазина 'Drink2GO'.</span>
@@ -188,13 +205,12 @@
                   </li>
               </ul>
           </div>
-          <a class="footer__copyright" href="#">
+          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="footer__copyright-text">Разработано в HTML Academy</span>
               <svg class="footer__copyright-icon" aria-label="Логотип HTML Academy"></svg>
           </a>
-      </footer>
-  </main>
-
+        </footer>
+      </main>
     <script src="./js/script.js" defer></script>
   </body>
 </html>
