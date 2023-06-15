@@ -1,7 +1,17 @@
-@import "global/variables";
-@import "global/global";
-@import "global/fonts";
-@import "global/utils.scss";
+@import "./global/variables.scss";
+@import "./global/global.scss";
+@import "./global/fonts.scss";
+@import "./global/utils.scss";
 
-@import "blocks/page.scss";
-@import "blocks/header";
+@import "./blocks/page.scss";
+@import "./blocks/header.scss";
+@import "./block/card-list.scss";
+@import "./block/catalog.scss";
+@import "./block/footer.scss";
+@import "./block/advantages.scss";
+@import "./block/form.scss";
+@import "./block/pagination.scss";
+@import "./block/map.scss";
+@import "./block/navigation.scss";
+@import "./block/promo.scss";
+
