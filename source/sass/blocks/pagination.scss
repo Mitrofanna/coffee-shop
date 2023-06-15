@@ -1,0 +1,24 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.pagination__item {
+  border: 1px solid $color-white;
+  width: 40px;
+  height: 40px;
+}
+
+.pagination__link {
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-violet;
+  text-decoration: none;
+  padding: 8px;
+
+  &--active {
+    font-weight: 600;
+    color: $color-grey
+  }
+}

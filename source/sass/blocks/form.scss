@@ -1,0 +1,24 @@
+.form__title {
+  line-height: 24px;
+  font-size: 600;
+}
+
+.form__label {
+  line-height: 24px;
+
+  &--light {
+    color: $color-light-grey;
+  }
+}
+
+.form__button {
+  line-height: 24px;
+  color: $color-white;
+  background-color: $color-violet;
+  padding: 8px 90px;
+
+  &--reset {
+    color: $color-violet;
+    background-color: $color-white;
+  }
+}

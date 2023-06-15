@@ -10,7 +10,10 @@
     <header class="page__header header">
       <nav class="navigation">
         <a class="navigation__link" href="#">
-          <img class="navigation__logo" src="#" height="#" width="#" alt="Логотип магазина 'Drink2GO'.">
+
+
+          <img class="navigation__logo" src="./img/icons/header-logo.svg" height="36" width="32" alt="Логотип магазина 'Drink2GO'.">
+
       </a>
       <ul class="navigation__list">
         <li class="navigation__item">
@@ -57,18 +60,22 @@
     </section>
     <section class="advantages">
       <h2 class="advantages__title">Преимущества</h2>
-      <h3 class="advantages__heading">Главные причины выбрать Drink2Go</h3>
+      <h2 class="advantages__heading">Главные причины выбрать Drink2Go</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
+            <h3 class="advantages__point">Скорость</h3>
             <p class="advantages__description">Готовый напиток всегда под рукой — просто открой банку</p>
           </li>
           <li class="advantages__item">
+            <h3 class="advantages__point">Удобство</h3>
             <p class="advantages__description">Легко помещается и в карман, и в маленькую сумочку</p>
           </li>
           <li class="advantages__item">
+            <h3 class="advantages__point">Бодрость</h3>
             <p class="advantages__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
           </li>
           <li class="advantages__item">
+            <h3 class="advantages__point">Экологичность</h3>
             <p class="advantages__description">Вся упаковка сделана из перерабатываемых материалов</p>
           </li>
         </ul>
@@ -94,7 +101,7 @@
                   </li>
                   <li class="form__item">
                       <input class="form__input-radio" id="no-milk" type="radio" name="type-of-milk" value="no-milk">
-                      <label class="form__label" for="no-milk">Без молока</label>
+                      <label class="form__label form__label--light" for="no-milk">Без молока</label>
                   </li>
               </ul>
           </div>
@@ -119,12 +126,12 @@
                   </li>
                   <li class="form__item">
                       <input class="form__input-checkbox" id="Peru" type="checkbox" name="country" value="Peru">
-                      <label class="form__label" for="Peru">Перу</label>
+                      <label class="form__label form__label--light" for="Peru">Перу</label>
                   </li>
               </ul>
           </div>
           <button class="form__button">Применить</button>
-          <button class="form__button--reset">Сбросить</button>
+          <button class="form__button form__button--reset">Сбросить</button>
           </form>
           <select class="select-control" aria-label="Сортировка:">
               <option value="default">По умолчанию</option>
@@ -135,7 +142,7 @@
                   <img class="card-list__image" src="#" width="#" height="#" alt="#">
                 </a>
                 <a class="card-list__link" href="#">
-                  <h3 class="card-list__item">Декаф Флэт Уайт</h3>
+                  <h3 class="card-list__title">Декаф Флэт Уайт</h3>
                 </a>
                   <p class="card-list__description">Кофе без кофеина из Эфиопии
                       с натуральным фермерским молоком</p>
@@ -152,7 +159,7 @@
             <a class="pagination__link" href="#">1</a>
           </li>
           <li class="pagination__item">
-            <a class="pagination__link pagination__link--current">2</a>
+            <a class="pagination__link pagination__link--active">2</a>
           </li>
           <li class="pagination__item">
               <a class="pagination__link" href="#">3</a>
@@ -199,8 +206,8 @@
           <div class="footer__info">
               <h3 class="footer__title">Контакты</h3>
               <ul class="footer__list">
-                  <li class="footer__item">Санкт-Петербург, набережная реки Карповки, дом 5</li>
-                  <li class="footer__item">
+                  <li class="footer__item-contact">Санкт-Петербург, набережная реки Карповки, дом 5</li>
+                  <li class="footer__item-contact">
                       <a class="footer__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
                   </li>
               </ul>
