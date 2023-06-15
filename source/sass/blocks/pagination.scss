@@ -6,8 +6,8 @@
 
 .pagination__item {
   border: 1px solid $color-white;
-  width: 40px;
-  height: 40px;
+  background-color: $color-white;
+  border-radius: 4px;;
 }
 
 .pagination__link {
@@ -20,5 +20,13 @@
   &--active {
     font-weight: 600;
     color: $color-grey
+  }
+}
+
+.pagination__show {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    display: block;
   }
 }

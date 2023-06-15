@@ -1,10 +1,32 @@
+.footer__wrapper {
+  @media (min-width: $vp-768){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+  }
+}
+
+.footer__info {
+  bottom: 1px solid $color-border;
+
+  @media (min-width: $vp-768) {
+    border: none;
+  }
+}
+
 .footer__title {
   font-weight: 700;
   color: $color-violet;
+  margin-top: 20px;
+  margin-bottom: 12px;
 }
 
 .footer__item {
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;;
+}
+
+.footer__list {
+  margin-bottom: 20px;
 }
