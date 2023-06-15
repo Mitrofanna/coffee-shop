@@ -1,9 +1,23 @@
+.promo {
+  position: relative;
+  padding: 20px 20px 60px;
+  background-color: $color-rose;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
 .promo__about {
   font-size: 12px;
   line-height: 16px;
   font-weight: 700;
   color: $color-violet;
   text-transform: uppercase;
+  padding-bottom: 4px;
+
+  @media (min-width: $vp-768) {
+    order: 1;
+  }
 }
 
 .promo__title {
@@ -11,17 +25,31 @@
   line-height: 36px;
   font-weight: 700;
   margin: 0;
+  padding-bottom: 10px;
 
   @media (min-width: $vp-768) {
     font-size: 56px;
     line-height: 80px;
+    order: 2;
   }
 }
 
 .promo__description {
+  margin-bottom: 20px;
+
   @media (min-width: $vp-768) {
     font-size: 24px;
     line-height: 32px;
+    order: 3;
+  }
+}
+
+.promo__wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $vp-768) {
+    order: 4;
   }
 }
 
@@ -29,6 +57,7 @@
   font-size: 16px;
   line-height: 32px;
   color: $color-violet;
+  padding-right: 6px;
   text-decoration-line: line-through;
 }
 
@@ -36,6 +65,7 @@
   font-size: 20px;
   line-height: 32px;
   font-weight: 600;
+  padding-right: 20px;
 }
 
 .promo__button {
@@ -50,5 +80,23 @@
     line-height: 24px;
   }
 }
+
+.promo__image-wrapper {
+  margin-bottom: 10px;
+
+  @media (min-width: $vp-768) {
+    order: 5;
+  }
+}
+
+.promo__slider-left {
+  position: absolute;
+}
+
+.promo__slider-right {
+  position: absolute;
+}
+
+
 
 

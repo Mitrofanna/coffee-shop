@@ -10,11 +10,8 @@
     <header class="page__header header">
       <nav class="navigation">
         <a class="navigation__link" href="#">
-
-
           <img class="navigation__logo" src="./img/icons/header-logo.svg" height="36" width="32" alt="Логотип магазина 'Drink2GO'.">
-
-      </a>
+        </a>
       <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link" href="#">
@@ -37,24 +34,28 @@
   <main class="page__main">
     <h1 class="visually-hidden">Магазин кофейных напитков.</h1>
     <section class="promo">
-      <picture>
-        <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/promo-coffee-desktop.webp 1x, img/content/promo-coffee-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="img/content/promo-coffee-tablet.webp 1x, img/content/promo-coffee-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="img/content/promo-coffee.webp 1x, img/content/promo-coffee@x2.webp 2x">
-        <source media="(min-width: 1440px)" srcset="./img/content/promo-coffee-desktop.png 1x, ./img/content/promo-coffee-desktop@2x.png 2x">
-        <source media="(min-width: 768px)" srcset="./img/content/promo-coffee-tablet.png 1x, ./img/content/promo-coffee-tablet@2x.png 2x">
-        <img class="promo__image" src="./img/content/promo-coffee.png" srcset="./img/content/promo-coffee@x2.png" width="280" height="280" alt="Кофейный напиток в бежевой банке.">
-      </picture>
-      <span class="promo__about">Новинка!</span>
+      <div class="promo__image-wrapper">
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/promo-coffee-desktop.webp 1x, img/content/promo-coffee-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/promo-coffee-tablet.webp 1x, img/content/promo-coffee-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/content/promo-coffee.webp 1x, img/content/promo-coffee@x2.webp 2x">
+          <source media="(min-width: 1440px)" srcset="./img/content/promo-coffee-desktop.png 1x, ./img/content/promo-coffee-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="./img/content/promo-coffee-tablet.png 1x, ./img/content/promo-coffee-tablet@2x.png 2x">
+          <img class="promo__image" src="./img/content/promo-coffee.png" srcset="./img/content/promo-coffee@x2.png" width="280" height="280" alt="Кофейный напиток в бежевой банке.">
+        </picture>
+      </div>
+      <p class="promo__about">Новинка!</p>
       <h2 class="promo__title">Декаф флэт уайт</h2>
       <p class="promo__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-      <span class="promo__price">295₽</span>
-      <span class="promo__discount-price">225₽</span>
-      <button class="promo__button" type="button">Заказать.</button>
-      <button class="promo__button--right" type="button">
+      <div class="promo__wrapper">
+        <span class="promo__price">295₽</span>
+        <span class="promo__discount-price">225₽</span>
+        <button class="promo__button" type="button">Заказать.</button>
+      </div>
+      <button class="promo__slider-right" type="button">
         <span class="visually-hidden">Листать направо.</span>
       </button>
-      <button class="promo__button--left" type="button">
+      <button class="promo__slider-left" type="button">
         <span class="visually-hidden">Листать налево.</span>
       </button>
     </section>
@@ -62,19 +63,19 @@
       <h2 class="advantages__title">Преимущества</h2>
       <h2 class="advantages__heading">Главные причины выбрать Drink2Go</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item-speed">
             <h3 class="advantages__point">Скорость</h3>
             <p class="advantages__description">Готовый напиток всегда под рукой — просто открой банку</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item-comfort">
             <h3 class="advantages__point">Удобство</h3>
             <p class="advantages__description">Легко помещается и в карман, и в маленькую сумочку</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item-fresh">
             <h3 class="advantages__point">Бодрость</h3>
             <p class="advantages__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item-ecology">
             <h3 class="advantages__point">Экологичность</h3>
             <p class="advantages__description">Вся упаковка сделана из перерабатываемых материалов</p>
           </li>
