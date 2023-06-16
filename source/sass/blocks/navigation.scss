@@ -2,6 +2,13 @@
   display: grid;
   grid-template-rows: auto auto;
 
+  &--close {
+    @media (max-width: $vp-767) {
+    margin-left: auto;
+    }
+  }
+
+
  @media (min-width: $vp-768) {
    margin-left: auto;
    padding-left: 170px;
@@ -10,16 +17,13 @@
 }
 
 .navigation__list {
+  position: relative;
   list-style-type: none;
   margin: 0;
   margin-left: auto;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
-
-  @media (min-width: $vp-768) {
-    margin-left: 60px;
-  }
+  padding-inline-start: 0;
 
   @media (min-width: $vp-1440) {
     padding-right: 40px;
@@ -62,10 +66,6 @@
   @media (min-width: $vp-1440) {
     left: 20px;
   }
-}
-
-.navigation__item-info {
-  display: none;
 }
 
 .navigation__list-menu {
@@ -131,5 +131,44 @@
   margin: 0;
   @media (min-width: $vp-1440) {
     display: block;
+  }
+}
+
+.navigation__button {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  display: none;
+  border: none;
+  box-sizing: border-box;
+  background-color: $color-white;
+}
+
+.navigation--close .navigation__list-menu {
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
+
+.navigation--close .navigation__button {
+  @media (max-width: $vp-767) {
+    display: block;
+    background: url("../../img/icons/stack.svg#menu") no-repeat center;
+  }
+}
+
+.navigation--open .navigation__list-menu {
+  @media (max-width: $vp-767) {
+    display: block;
+  }
+}
+
+.navigation--open .navigation__button {
+  @media (max-width: $vp-767) {
+    display: block;
+    background: url("../../img/icons/stack.svg#menu-close") no-repeat center;
   }
 }
