@@ -71,21 +71,16 @@
 .advantages__item {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
-.advantages__item-speed::before {
-  content: url("../img/icons/speed.svg");
+.advantages__image {
+  margin: 0 auto;
 }
 
-.advantages__item-comfort::before {
-  content: url("../img/icons/comfort.svg");
-}
-
-.advantages__item-fresh::before {
-  content: url("../img/icons/energy.svg");
-}
-
-.advantages__item-ecology::before {
-  content: url("../img/icons/list.svg");
+.advantages__item--speed::before {
+  content: url("../../img/icons/stack.svg#speed");
+  width: 50px;
+  height: 56px;
 }
 

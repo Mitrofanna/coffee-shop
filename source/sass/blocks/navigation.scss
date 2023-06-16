@@ -1,0 +1,135 @@
+.navigation {
+  display: grid;
+  grid-template-rows: auto auto;
+
+ @media (min-width: $vp-768) {
+   margin-left: auto;
+   padding-left: 170px;
+   display: flex;
+ }
+}
+
+.navigation__list {
+  list-style-type: none;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $vp-768) {
+    margin-left: 60px;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding-right: 40px;
+  }
+}
+
+.navigation__item {
+  display: inline-block;
+  position: relative;
+  min-width: 60px;
+  min-height: 60px;
+  box-sizing: border-box;
+
+  @media (min-width: $vp-768) {
+    min-height: 80px;
+  }
+}
+
+.navigation__link {
+  padding: 22px;
+  display: inline-block;
+  text-decoration: none;
+  color: $color-grey;
+
+  @media (min-width: $vp-1440) {
+    padding: 32px 20px 32px 44px;
+  }
+}
+
+.navigation__link-icon {
+  display: inline-block;
+  position: absolute;
+  top: 22px;
+  left: 22px;
+
+  @media (min-width: $vp-768) {
+    top: 32px;
+  }
+
+  @media (min-width: $vp-1440) {
+    left: 20px;
+  }
+}
+
+.navigation__item-info {
+  display: none;
+}
+
+.navigation__list-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-wrap: wrap;
+    order: -1;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding-right: 40px;
+  }
+}
+
+.navigation__item-menu {
+  display: inline-flex;
+
+  @media (max-width: $vp-767) {
+    border-top: 1px solid $color-border;
+    width: 100vw;
+  }
+}
+
+.navigation__link-menu {
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: $color-grey;
+  padding: 20px;
+  text-decoration: none;
+  display: inline-flex;
+  text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    padding: 32px 20px;
+  }
+}
+
+.navigation__item-active {
+  @media (min-width: $vp-768) {
+    border-bottom: 2px solid $color-violet;
+  }
+}
+
+.navigation__link-active {
+  @media (min-width: $vp-768) {
+    color: $color-violet;
+  }
+}
+
+.navigation__link-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  display: none;
+  margin: 0;
+  @media (min-width: $vp-1440) {
+    display: block;
+  }
+}

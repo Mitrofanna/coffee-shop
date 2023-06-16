@@ -8,25 +8,54 @@
   </head>
   <body class="page">
     <header class="page__header header">
+      <a class="header__link" href="#">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/icons/stack.svg#desktop-logo">
+          <source media="(min-width: 768px)" srcset="img/icons/stack.svg#logo-mini">
+          <img class="header__logo" width="32" height="36" src="img/icons/stack.svg#header-logo"
+            alt="Логотип магазина.">
+        </picture>
+      </a>
+      <p class="header__shop">Интернет-магазин
+        кофейных напитков</p>
       <nav class="navigation">
-        <a class="navigation__link" href="#">
-          <img class="navigation__logo" src="./img/icons/header-logo.svg" height="36" width="32" alt="Логотип магазина 'Drink2GO'.">
-        </a>
-      <ul class="navigation__list">
+        <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link" href="#">
-            <span class="visually-hidden">Авторизация.</span>
+            <svg class="navigation__link-icon" aria-hidden="true" focusable="false"  width="16" height="16">
+              <use xlink:href="./img/icons/stack.svg#user"></use>
+            </svg>
+            <span class="visually-hidden">Личный кабинет.</span>
+            <p class="navigation__link-text">Войти</p>
           </a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="#">
+            <svg class="navigation__link-icon" aria-hidden="true" focusable="false"  width="16" height="16">
+              <use xlink:href="./img/icons/stack.svg#cart"></use>
+            </svg>
             <span class="visually-hidden">Корзина.</span>
+            <p class="navigation__link-text">Корзина.</p>
           </a>
         </li>
-        <li class="navigation__item">
+        <li class="navigation__item navigation__item-info">
           <a class="navigation__link" href="#">
             <span class="visually-hidden">Открыть/закрыть меню.</span>
           </a>
+        </li>
+      </ul>
+      <ul class="navigation__list-menu">
+        <li class="navigation__item-menu navigation__item-active">
+          <a class="navigation__link-menu navigation__link-active" href="#">Главная</a>
+        </li>
+        <li class="navigation__item-menu">
+          <a class="navigation__link-menu" href="#">Каталог</a>
+        </li>
+        <li class="navigation__item-menu">
+          <a class="navigation__link-menu" href="#">Доставка</a>
+        </li>
+        <li class="navigation__item-menu">
+          <a class="navigation__link-menu" href="#">О нас</a>
         </li>
       </ul>
     </nav>
@@ -63,19 +92,28 @@
       <h2 class="advantages__title">Преимущества</h2>
       <h2 class="advantages__heading">Главные причины выбрать Drink2Go</h2>
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item-speed">
+          <li class="advantages__item advantages__item--speed">
             <h3 class="advantages__point">Скорость</h3>
             <p class="advantages__description">Готовый напиток всегда под рукой — просто открой банку</p>
           </li>
           <li class="advantages__item advantages__item-comfort">
+            <svg class="advantages__image" aria-hidden="true" focusable="false"  width="52" height="56">
+              <use xlink:href="./img/icons/stack.svg#comfort"></use>
+            </svg>
             <h3 class="advantages__point">Удобство</h3>
             <p class="advantages__description">Легко помещается и в карман, и в маленькую сумочку</p>
           </li>
           <li class="advantages__item advantages__item-fresh">
+            <svg class="advantages__image" aria-hidden="true" focusable="false"  width="42" height="56">
+              <use xlink:href="./img/icons/stack.svg#energy"></use>
+            </svg>
             <h3 class="advantages__point">Бодрость</h3>
             <p class="advantages__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
           </li>
           <li class="advantages__item advantages__item-ecology">
+            <svg class="advantages__image" aria-hidden="true" focusable="false"  width="46" height="56">
+              <use xlink:href="./img/icons/stack.svg#list"></use>
+            </svg>
             <h3 class="advantages__point">Экологичность</h3>
             <p class="advantages__description">Вся упаковка сделана из перерабатываемых материалов</p>
           </li>
@@ -152,7 +190,12 @@
                       с натуральным фермерским молоком</p>
 
                   <span class="card-list__price">225₽</span>
-                  <button class="card-list__button">В корзину</button>
+                  <button class="card-list__button">
+                    <svg class="card-list__icon" aria-hidden="true" focusable="false"  width="20" height="16">
+                      <use xlink:href="./img/icons/stack.svg#cart-button"></use>
+                    </svg>
+                    В корзину
+                  </button>
               </li>
               <li class="card-list__item">
                 <a class="card-list__link" href="#">
@@ -167,7 +210,12 @@
                 <p class="card-list__description">Кофе без кофеина из Эфиопии
                         с натуральным фермерским молоком</p>
                 <span class="card-list__price">225₽</span>
-                <button class="card-list__button">В корзину</button>
+                <button class="card-list__button">
+                  <svg class="card-list__icon" aria-hidden="true" focusable="false"  width="20" height="16">
+                    <use xlink:href="./img/icons/stack.svg#cart-button"></use>
+                  </svg>
+                  В корзину
+                </button>
               </li>
               <li class="card-list__item">
                 <a class="card-list__link" href="#">
@@ -183,7 +231,12 @@
                       с натуральным фермерским молоком
                 </p>
                 <span class="card-list__price">225₽</span>
-                <button class="card-list__button">В корзину</button>
+                <button class="card-list__button">
+                  <svg class="card-list__icon" aria-hidden="true" focusable="false"  width="20" height="16">
+                    <use xlink:href="./img/icons/stack.svg#cart-button"></use>
+                  </svg>
+                  В корзину
+                </button>
               </li>
               <li class="card-list__item">
                 <a class="card-list__link" href="#">
@@ -199,7 +252,12 @@
                       с натуральным фермерским молоком
                 </p>
                 <span class="card-list__price">225₽</span>
-                <button class="card-list__button">В корзину</button>
+                <button class="card-list__button">
+                  <svg class="card-list__icon" aria-hidden="true" focusable="false"  width="20" height="16">
+                    <use xlink:href="./img/icons/stack.svg#cart-button"></use>
+                  </svg>
+                  В корзину
+                </button>
               </li>
               <li class="card-list__item">
                 <a class="card-list__link" href="#">
@@ -215,7 +273,12 @@
                       с натуральным фермерским молоком
                 </p>
                 <span class="card-list__price">225₽</span>
-                <button class="card-list__button">В корзину</button>
+                <button class="card-list__button">
+                  <svg class="card-list__icon" aria-hidden="true" focusable="false"  width="20" height="16">
+                    <use xlink:href="./img/icons/stack.svg#cart-button"></use>
+                  </svg>
+                  В корзину
+                </button>
               </li>
               <li class="card-list__item">
                 <a class="card-list__link" href="#">
@@ -231,7 +294,12 @@
                       с натуральным фермерским молоком
                 </p>
                 <span class="card-list__price">225₽</span>
-                <button class="card-list__button">В корзину</button>
+                <button class="card-list__button">
+                  <svg class="card-list__icon" aria-hidden="true" focusable="false"  width="20" height="16">
+                    <use xlink:href="./img/icons/stack.svg#cart-button"></use>
+                  </svg>
+                  В корзину
+                </button>
               </li>
             </ul>
             <ul class="pagination">
@@ -260,16 +328,28 @@
           <footer class="page__footer footer">
               <div class="footer__info">
                   <a class="footer__logo" href="#">
-                      <span class="visually-hidden">Логотип магазина 'Drink2GO'.</span>
+                    <svg class="foter__contact-icon" aria-hidden="true" focusable="false"  width="82" height="36">
+                      <use xlink:href="./img/icons/stack.svg#logo=mini"></use>
+                    </svg>
+                    <span class="visually-hidden">Логотип магазина 'Drink2GO'.</span>
                   </a>
                   <ul class="footer__social-list">
                       <li class="footer__social-item">
-                          <span class="visually-hidden">Мы в Вконтакте.</span>
+                        <svg class="foter__social-icon" aria-hidden="true" focusable="false"  width="20" height="20">
+                          <use xlink:href="./img/icons/stack.svg#vk"></use>
+                        </svg>
+                        <span class="visually-hidden">Мы в Вконтакте.</span>
                       </li>
                       <li class="footer__social-item">
-                          <span class="visually-hidden">Мы Вконтакте</span>
+                        <svg class="foter__social-icon" aria-hidden="true" focusable="false"  width="22" height="22">
+                          <use xlink:href="./img/icons/stack.svg#pinterest"></use>
+                        </svg>
+                        <span class="visually-hidden">Мы в Pinterest.</span>
                       </li>
                       <li class="footer__social-item">
+                        <svg class="foter__social-icon" aria-hidden="true" focusable="false"  width="20" height="20">
+                          <use xlink:href="./img/icons/stack.svg#ok"></use>
+                        </svg>
                           <span class="visually-hidden">Мы в одноклассниках.</span>
                       </li>
                   </ul>
@@ -295,16 +375,25 @@
             <div class="footer__info">
                 <h3 class="footer__title">Контакты</h3>
                 <ul class="footer__list">
-                    <li class="footer__item-contact">Санкт-Петербург, набережная реки Карповки, дом 5</li>
-                    <li class="footer__item-contact">
-                        <a class="footer__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
+                    <li class="footer__contact">
+                      <svg class="foter__contact-icon" aria-hidden="true" focusable="false"  width="13" height="16">
+                        <use xlink:href="./img/icons/stack.svg#address"></use>
+                      </svg>
+                      Санкт-Петербург, набережная реки Карповки, дом 5</li>
+                    <li class="footer__contact">
+                      <svg class="foter__contact-icon" aria-hidden="true" focusable="false"  width="13" height="16">
+                        <use xlink:href="./img/icons/stack.svg#phone"></use>
+                      </svg>
+                      <a class="footer__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
                     </li>
                 </ul>
             </div>
           </div>
           <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="footer__copyright-text">Разработано в HTML Academy</span>
-              <svg class="footer__copyright-icon" aria-label="Логотип HTML Academy"></svg>
+            <span class="footer__copyright-text">Разработано в HTML Academy</span>
+            <svg class="foter__copyright-icon" aria-hidden="true" focusable="false"  width="12" height="16">
+              <use xlink:href="./img/icons/stack.svg#logo-academy"></use>
+            </svg>
           </a>
         </footer>
       </main>

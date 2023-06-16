@@ -1,1 +1,45 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
 
+.header__link {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+
+  @media (min-width: $vp-768) {
+    top: 22px;
+  }
+
+  @media (min-width: $vp-1440) {
+    left: 40px;
+  }
+}
+
+.header__logo {
+  @media (min-width: $vp-768) {
+    width: 82px;
+    height: 36px;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 170px;
+    height: 36px;
+  }
+}
+
+.header__shop {
+  display: none;
+
+  @media (min-width: $vp-1440) {
+    display: inline-block;
+    max-width: 126px;
+    font-size: 12px;
+    line-height: 16px;
+    padding-top: 24px;
+    padding-left: 230px;
+    margin: 0;
+  }
+}
