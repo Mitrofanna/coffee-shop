@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Drink2GO</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
@@ -62,6 +63,9 @@
   </header>
   <main class="page__main">
     <h1 class="visually-hidden">Магазин кофейных напитков.</h1>
+
+
+
     <section class="promo">
       <div class="promo__image-wrapper">
         <picture>
@@ -93,6 +97,9 @@
       <h2 class="advantages__heading">Главные причины выбрать Drink2Go</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--speed">
+            <svg class="advantages__image" aria-hidden="true" focusable="false"  width="52" height="56">
+              <use xlink:href="./img/icons/stack.svg#speed"></use>
+            </svg>
             <h3 class="advantages__point">Скорость</h3>
             <p class="advantages__description">Готовый напиток всегда под рукой — просто открой банку</p>
           </li>
@@ -120,32 +127,45 @@
         </ul>
       </section>
       <section class="catalog">
+
           <h2 class="catalog__title">Каталог</h2>
           <h3 class="catalog__heading">Каталог кофейных напитков</h3>
           <form class="catalog__form form">
-          <div class="form__wrapper">
-              <h3 class="form__title">Наличие молока</h3>
+          <fieldset class="form__wrapper">
+              <legend class="form__title">Наличие молока</legend>
               <ul class="form__list">
                   <li class="form__item">
-                      <input class="form__input-radio" id="any-milk" type="radio" name="type-of-milk" value="any">
-                      <label class="form__label" for="any-milk">Неважно</label>
+                    <label class="form__label" for="any-milk"></label>
+                      <input class="form__input-radio visually-hidden" id="any-milk" type="radio" name="type-of-milk" value="any" checked>
+                      <span class="form__cover"></span>
+                      Неважно
+                    </label>
                   </li>
                   <li class="form__item">
-                      <input class="form__input-radio" id="animal-milk" type="radio" name="type-of-milk" value="animal-milk">
-                      <label class="form__label" for="animal-milk">Только животное</label>
+                    <label class="form__label" for="animal-milk"></label>
+                      <input class="form__input-radio visually-hidden" id="animal-milk" type="radio" name="type-of-milk" value="animal-milk">
+                      <span class="form__cover"></span>
+                      Только животное
+                    </label>
                   </li>
                   <li class="form__item">
-                      <input class="form__input-radio" id="vegetable-milk" type="radio" name="type-of-milk" value="vegetable-milk">
-                      <label class="form__label" for="vegetable-milk">Только растительное</label>
+                    <label class="form__label" for="vegetable-milk"></label>
+                      <input class="form__input-radio visually-hidden" id="vegetable-milk" type="radio" name="type-of-milk" value="vegetable-milk">
+                      <span class="form__cover"></span>
+                      Только растительное
+                    </label>
                   </li>
                   <li class="form__item">
-                      <input class="form__input-radio" id="no-milk" type="radio" name="type-of-milk" value="no-milk">
-                      <label class="form__label form__label--light" for="no-milk">Без молока</label>
+                    <label class="form__label form__label--light" for="no-milk"></label>
+                      <input class="form__input-radio visually-hidden" id="no-milk" type="radio" name="type-of-milk" value="no-milk">
+                      <span class="form__cover"></span>
+                      Без молока
+                    </label>
                   </li>
               </ul>
-          </div>
-          <div class="form__wrapper">
-              <h3 class="form__title">Страна произрастания</h3>
+          </fieldset>
+          <fieldset class="form__wrapper">
+              <legend class="form__title">Страна произрастания</legend>
               <ul class="form__list">
                   <li class="form__item">
                       <input class="form__input-checkbox" id="Brazil" type="checkbox" name="country" value="Brazil">
@@ -168,7 +188,7 @@
                       <label class="form__label form__label--light" for="Peru">Перу</label>
                   </li>
               </ul>
-          </div>
+          </fieldset>
           <button class="form__button">Применить</button>
           <button class="form__button form__button--reset">Сбросить</button>
           </form>
@@ -309,9 +329,9 @@
                   </a>
                 </li>
               <li class="pagination__item">
-                <a class="pagination__link" href="#">1</a>
+                <a class="pagination__link " href="#">1</a>
               </li>
-              <li class="pagination__item">
+              <li class="pagination__item pagination__item--active">
                 <a class="pagination__link pagination__link--active">2</a>
               </li>
               <li class="pagination__item">
@@ -397,6 +417,7 @@
           </a>
         </footer>
       </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/script.js" defer></script>
   </body>
 </html>

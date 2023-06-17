@@ -1,11 +1,13 @@
 .form__title {
+  margin: 0;
   line-height: 24px;
   font-size: 600;
+  padding-bottom: 20px;
 }
 
 .form__label {
   line-height: 24px;
-
+  padding-left: 34px;
   &--light {
     color: $color-light-grey;
   }
@@ -21,4 +23,55 @@
     color: $color-violet;
     background-color: $color-white;
   }
+}
+
+.form__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.form__wrapper {
+  border: none;
+  &:nth-child(1) {
+    margin-bottom: 34px;
+  }
+
+  &:nth-child(2) {
+    margin-bottom: 30px;
+  }
+}
+
+.form__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  background-color: $color-white;
+  border: 2px solid $color-light-grey;
+  border-radius: 50%;
+}
+
+.form__input-radio:checked + .form__cover::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $color-violet;
+}
+
+.form__input-radio:checked + .form__cover {
+  border-color: $color-violet;
 }
