@@ -62,7 +62,6 @@
   </header>
   <main class="page__main">
     <h1 class="visually-hidden">Магазин кофейных напитков.</h1>
-
 <div class="swiper">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
@@ -183,7 +182,6 @@
             <div class="form__container">
               <fieldset class="form__wrapper wrapper-price">
                <legend class="form__title">Цена</legend>
-
                <div class="form__price price" id="range-slider"></div>
                <div class="price__inputs">
                  <label class="price__label">
@@ -196,8 +194,6 @@
                    <input type="number" class="price__input" id="input-max" min="0" max="1000" placeholder="900">
                   </label>
                </div>
-
-
               </fieldset>
               <fieldset class="form__wrapper">
                <legend class="form__title">Наличие молока</legend>
@@ -278,10 +274,16 @@
             <button class="form__button form__button--reset">Сбросить</button>
           </div>
           </form>
-          <select class="select-control" aria-label="Сортировка:">
-              <option value="default">По умолчанию</option>
-          </select>
-          <ul class="card-list">
+          <div class="catalog__sort">
+            <label class="catalog__sort-label" for="select">Сортировка:</label>
+            <select class="catalog__sort-select" id="select">
+                <option class="catalog__sort-option" value="default" selected>По умолчанию</option>
+                <option value="default">Сначала дорогие</option>
+                <option value="default">Сначала дешевые</option>
+                <option value="default">Высокий рейтинг</option>
+            </select>
+          </div>
+          <ul class="catalog__card card-list">
             <li class="card-list__item">
               <a class="card-list__link" href="#">
                 <picture>
@@ -408,7 +410,7 @@
                 </button>
               </li>
             </ul>
-            <ul class="pagination">
+            <ul class="catalog__pagination pagination">
               <li class="pagination__item">
                   <a class="pagination__link" href="#">
                     <span class="pagination__show">Назад</span>

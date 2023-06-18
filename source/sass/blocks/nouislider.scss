@@ -10,6 +10,10 @@
 
 .noUi-connect {
   background: $color-blue;
+
+  &:disabled {
+    opacity: 3;
+  }
 }
 
 .noUi-handle::before,
@@ -22,6 +26,21 @@
   border-radius: 100%;
   background-color: $color-white;
   border: 2px solid $color-blue;
+
+  &:focus,
+  &:hover {
+    background-color: $color-light;
+  }
+
+  &:active {
+    background-color: $color-blue;
+    outline: 2px solid $color-white;
+    outline-offset: -4px;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .noUi-horizontal .noUi-handle {

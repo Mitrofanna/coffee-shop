@@ -27,3 +27,34 @@
     line-height: 64px;
   }
 }
+
+.catalog__sort {
+  display: grid;
+  grid-template-columns: min-content 165px;
+  column-gap: 10px;
+}
+
+.catalog__sort-select {
+  border: none;
+  background-color: transparent;
+  color: $color-violet;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 4px;
+  line-height: 24px;
+  padding: 8px 10px;
+  outline: none;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    background-color: $color-border;
+  }
+}
+
+.catalog__sort-label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}

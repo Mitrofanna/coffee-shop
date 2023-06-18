@@ -40,6 +40,17 @@
   box-sizing: border-box;
   border: 2px solid $color-blue;
   border-radius: 4px;
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-color: $color-dark-blue;
+    outline: none;
+  }
+
+  &:disabled {
+    border-color: $color-light;
+  }
 }
 
 
