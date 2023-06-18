@@ -5,6 +5,7 @@
     <title>Drink2GO</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
@@ -182,6 +183,21 @@
             <div class="form__container">
               <fieldset class="form__wrapper wrapper-price">
                <legend class="form__title">Цена</legend>
+
+               <div class="form__price price" id="range-slider"></div>
+               <div class="price__inputs">
+                 <label class="price__label">
+                   <span class="visually-hidden">от</span>
+                   <input type="number" class="price__input" id="input-min" min="0" max="1000" placeholder="0">
+                 </label>
+                 <span class="price__separator">-</span>
+                 <label class="price__label">
+                   <span class="visually-hidden">до</span>
+                   <input type="number" class="price__input" id="input-max" min="0" max="1000" placeholder="900">
+                  </label>
+               </div>
+
+
               </fieldset>
               <fieldset class="form__wrapper">
                <legend class="form__title">Наличие молока</legend>
@@ -488,6 +504,7 @@
         </footer>
       </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
     <script src="./js/script.js" defer></script>
   </body>
 </html>
