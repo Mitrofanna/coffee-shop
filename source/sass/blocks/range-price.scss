@@ -1,0 +1,25 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination-bullet-active {
+  height: 4px;
+  width: 62px;
+  background-color: $color-violet;
+  border-radius: none;
+}
+
+.swiper-pagination-bullet {
+  height: 4px;
+  width: 62px;
+  background-color: $color-violet;
+  border-radius: 0;
+}
+
+

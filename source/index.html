@@ -13,25 +13,23 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="img/icons/stack.svg#desktop-logo">
           <source media="(min-width: 768px)" srcset="img/icons/stack.svg#logo-mini">
-          <img class="header__logo" width="32" height="36" src="img/icons/stack.svg#header-logo"
-            alt="Логотип магазина.">
+          <img class="header__logo" width="32" height="36" src="img/icons/stack.svg#header-logo" alt="Логотип магазина.">
         </picture>
       </a>
-      <p class="header__shop">Интернет-магазин
-        кофейных напитков</p>
+      <p class="header__shop">Интернет-магазин кофейных напитков</p>
       <nav class="navigation">
         <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">
-            <svg class="navigation__link-icon" aria-hidden="true" focusable="false"  width="16" height="16">
-              <use xlink:href="./img/icons/stack.svg#user"></use>
-            </svg>
-            <span class="visually-hidden">Личный кабинет.</span>
-            <p class="navigation__link-text">Войти</p>
-          </a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
+              <svg class="navigation__link-icon" aria-hidden="true" focusable="false"  width="16" height="16">
+                <use xlink:href="./img/icons/stack.svg#user"></use>
+              </svg>
+              <span class="visually-hidden">Личный кабинет.</span>
+              <p class="navigation__link-text">Войти</p>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
             <svg class="navigation__link-icon" aria-hidden="true" focusable="false"  width="16" height="16">
               <use xlink:href="./img/icons/stack.svg#cart"></use>
             </svg>
@@ -64,34 +62,85 @@
   <main class="page__main">
     <h1 class="visually-hidden">Магазин кофейных напитков.</h1>
 
-
-
-    <section class="promo">
-      <div class="promo__image-wrapper">
-        <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/promo-coffee-desktop.webp 1x, img/content/promo-coffee-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/content/promo-coffee-tablet.webp 1x, img/content/promo-coffee-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/content/promo-coffee.webp 1x, img/content/promo-coffee@x2.webp 2x">
-          <source media="(min-width: 1440px)" srcset="./img/content/promo-coffee-desktop.png 1x, ./img/content/promo-coffee-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="./img/content/promo-coffee-tablet.png 1x, ./img/content/promo-coffee-tablet@2x.png 2x">
-          <img class="promo__image" src="./img/content/promo-coffee.png" srcset="./img/content/promo-coffee@x2.png" width="280" height="280" alt="Кофейный напиток в бежевой банке.">
-        </picture>
-      </div>
-      <p class="promo__about">Новинка!</p>
-      <h2 class="promo__title">Декаф флэт уайт</h2>
-      <p class="promo__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-      <div class="promo__wrapper">
-        <span class="promo__price">295₽</span>
-        <span class="promo__discount-price">225₽</span>
-        <button class="promo__button" type="button">Заказать.</button>
-      </div>
-      <button class="promo__slider-right" type="button">
-        <span class="visually-hidden">Листать направо.</span>
-      </button>
-      <button class="promo__slider-left" type="button">
-        <span class="visually-hidden">Листать налево.</span>
-      </button>
-    </section>
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <section class="promo">
+        <div class="promo__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/promo-coffee-desktop.webp 1x, img/content/promo-coffee-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/promo-coffee-tablet.webp 1x, img/content/promo-coffee-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/promo-coffee.webp 1x, img/content/promo-coffee@x2.webp 2x">
+            <source media="(min-width: 1440px)" srcset="./img/content/promo-coffee-desktop.png 1x, ./img/content/promo-coffee-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/content/promo-coffee-tablet.png 1x, ./img/content/promo-coffee-tablet@2x.png 2x">
+            <img class="promo__image" src="./img/content/promo-coffee.png" srcset="./img/content/promo-coffee@x2.png" width="280" height="280" alt="Кофейный напиток в бежевой банке.">
+          </picture>
+        </div>
+        <div class="promo__text">
+          <p class="promo__about">Новинка!</p>
+          <h2 class="promo__title">Декаф флэт уайт</h2>
+          <p class="promo__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+          <div class="promo__wrapper">
+            <span class="promo__price">295₽</span>
+            <span class="promo__discount-price">225₽</span>
+            <button class="promo__button" type="button">Заказать.</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="swiper-slide">
+      <section class="promo promo--lavender">
+        <div class="promo__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/lavender-desktop.webp 1x, img/content/lavender-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/lavender-tablet.webp 1x, img/content/lavender-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/lavender.webp 1x, img/content/lavender@x2.webp 2x">
+            <source media="(min-width: 1440px)" srcset="./img/content/lavender-desktop.png 1x, ./img/content/lavender-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/content/lavender-tablet.png 1x, ./img/content/lavender-tablet@2x.png 2x">
+            <img class="promo__image" src="./img/content/lavender.png" srcset="./img/content/lavender@2x.png" width="280" height="280" alt="Кофейный напиток в сиреневой банке.">
+          </picture>
+        </div>
+        <div class="promo__text">
+          <p class="promo__about">Новинка!</p>
+          <h2 class="promo__title">Лавандовый Латте</h2>
+          <p class="promo__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+          <div class="promo__wrapper">
+            <span class="promo__price">285₽</span>
+            <span class="promo__discount-price">265₽</span>
+            <button class="promo__button" type="button">Заказать.</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="swiper-slide">
+      <section class="promo promo--espresso">
+        <div class="promo__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/espresso-desktop.webp 1x, img/content/espresso-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/espresso-tablet.webp 1x, img/content/espresso-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/espresso.webp 1x, img/content/espresso@x2.webp 2x">
+            <source media="(min-width: 1440px)" srcset="./img/content/espresso-desktop.png 1x, ./img/content/espresso-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/content/espresso-tablet.png 1x, ./img/content/espresso-tablet@2x.png 2x">
+            <img class="promo__image" src="./img/content/espresso.png" srcset="./img/content/espresso@x2.png" width="280" height="280" alt="Кофейный напиток в черной банке.">
+          </picture>
+        </div>
+        <div class="promo__text">
+          <p class="promo__about">Новинка!</p>
+          <h2 class="promo__title">Тройной Эспрессо</h2>
+          <p class="promo__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+          <div class="promo__wrapper">
+            <span class="promo__price">395₽</span>
+            <span class="promo__discount-price">375₽</span>
+            <button class="promo__button" type="button">Заказать.</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  </div>
     <section class="advantages">
       <h2 class="advantages__title">Преимущества</h2>
       <h2 class="advantages__heading">Главные причины выбрать Drink2Go</h2>
@@ -127,85 +176,91 @@
         </ul>
       </section>
       <section class="catalog">
-
           <h2 class="catalog__title">Каталог</h2>
           <h3 class="catalog__heading">Каталог кофейных напитков</h3>
           <form class="catalog__form form">
-          <fieldset class="form__wrapper">
-              <legend class="form__title">Наличие молока</legend>
-              <ul class="form__list">
-                  <li class="form__item">
-                    <label class="form__label" for="any-milk">
-                      <input class="form__input-radio visually-hidden" id="any-milk" type="radio" name="type-of-milk" value="any" checked>
-                      <span class="form__cover"></span>
-                      Неважно
-                    </label>
-                  </li>
-                  <li class="form__item">
-                    <label class="form__label" for="animal-milk">
-                      <input class="form__input-radio visually-hidden" id="animal-milk" type="radio" name="type-of-milk" value="animal-milk">
-                      <span class="form__cover"></span>
-                      Только животное
-                    </label>
-                  </li>
-                  <li class="form__item">
-                    <label class="form__label" for="vegetable-milk">
-                      <input class="form__input-radio visually-hidden" id="vegetable-milk" type="radio" name="type-of-milk" value="vegetable-milk">
-                      <span class="form__cover"></span>
-                      Только растительное
-                    </label>
-                  </li>
-                  <li class="form__item">
-                    <label class="form__label form__label--light" for="no-milk">
-                      <input class="form__input-radio visually-hidden" id="no-milk" type="radio" name="type-of-milk" value="no-milk">
-                      <span class="form__cover"></span>
-                      Без молока
-                    </label>
-                  </li>
-              </ul>
-          </fieldset>
-          <fieldset class="form__wrapper">
-              <legend class="form__title">Страна произрастания</legend>
-              <ul class="form__list">
-                  <li class="form__item">
-                    <label class="form__label" for="Brazil">
-                      <input class="form__input-checkbox visually-hidden" id="Brazil" type="checkbox" name="country" value="Brazil" checked>
-                      <span class="form__cover-check"></span>
-                      Бразилия
-                    </label>
-                  </li>
-                  <li class="form__item">
-                    <label class="form__label" for="Ethiopia">
-                      <input class="form__input-checkbox visually-hidden" id="Ethiopia" type="checkbox" name="country" value="Ethiopia">
-                      <span class="form__cover-check"></span>
-                      Эфиопия
-                    </label>
-                  </li>
-                  <li class="form__item">
-                    <label class="form__label" for="Colombia">
-                      <input class="form__input-checkbox visually-hidden" id="Colombia" type="checkbox" name="country" value="Colombia">
-                      <span class="form__cover-check"></span>
-                      Колумбия
-                    </label>
-                  </li>
-                  <li class="form__item">
-                    <label class="form__label" for="Costa-Rica">
-                      <input class="form__input-checkbox visually-hidden" id="Costa-Rica" type="checkbox" name="country" value="Costa-Rica">
-                      <span class="form__cover-check"></span>
-                      Коста-Рика
-                    </label>
-                  </li>
-                  <li class="form__item">
-                    <label class="form__label form__label--light" for="Peru">
-                      <input class="form__input-checkbox visually-hidden" id="Peru" type="checkbox" name="country" value="Peru">
-                      <span class="form__cover-check"></span>
-                      Перу
-                    </label>
-                  </li>
-              </ul>
-          </fieldset>
-          <button class="form__button">Применить</button>
-          <button class="form__button form__button--reset">Сбросить</button>
+            <div class="form__container">
+              <fieldset class="form__wrapper wrapper-price">
+               <legend class="form__title">Цена</legend>
+              </fieldset>
+              <fieldset class="form__wrapper">
+               <legend class="form__title">Наличие молока</legend>
+                 <ul class="form__list">
+                     <li class="form__item">
+                       <label class="form__label" for="any-milk">
+                         <input class="form__input-radio visually-hidden" id="any-milk" type="radio" name="type-of-milk" value="any" checked>
+                         <span class="form__cover"></span>
+                         Неважно
+                       </label>
+                     </li>
+                     <li class="form__item">
+                       <label class="form__label" for="animal-milk">
+                         <input class="form__input-radio visually-hidden" id="animal-milk" type="radio" name="type-of-milk" value="animal-milk">
+                         <span class="form__cover"></span>
+                         Только животное
+                       </label>
+                     </li>
+                     <li class="form__item">
+                       <label class="form__label" for="vegetable-milk">
+                         <input class="form__input-radio visually-hidden" id="vegetable-milk" type="radio" name="type-of-milk" value="vegetable-milk">
+                         <span class="form__cover"></span>
+                         Только растительное
+                       </label>
+                     </li>
+                     <li class="form__item">
+                       <label class="form__label form__label--light" for="no-milk">
+                         <input class="form__input-radio visually-hidden" id="no-milk" type="radio" name="type-of-milk" value="no-milk">
+                         <span class="form__cover"></span>
+                         Без молока
+                       </label>
+                     </li>
+                 </ul>
+             </fieldset>
+             <fieldset class="form__wrapper">
+                 <legend class="form__title">Страна произрастания</legend>
+                 <ul class="form__list">
+                     <li class="form__item">
+                       <label class="form__label form__label--check" for="Brazil">
+                         <input class="form__input-checkbox visually-hidden" id="Brazil" type="checkbox" name="country" value="Brazil" checked>
+                         <span class="form__cover-check"></span>
+                         Бразилия
+                       </label>
+                     </li>
+                     <li class="form__item">
+                       <label class="form__label form__label--check" for="Ethiopia">
+                         <input class="form__input-checkbox visually-hidden" id="Ethiopia" type="checkbox" name="country" value="Ethiopia">
+                         <span class="form__cover-check"></span>
+                         Эфиопия
+                       </label>
+                     </li>
+                     <li class="form__item">
+                       <label class="form__label form__label--check" for="Colombia">
+                         <input class="form__input-checkbox visually-hidden" id="Colombia" type="checkbox" name="country" value="Colombia">
+                         <span class="form__cover-check"></span>
+                         Колумбия
+                       </label>
+                     </li>
+                     <li class="form__item">
+                       <label class="form__label form__label--check" for="Costa-Rica">
+                         <input class="form__input-checkbox visually-hidden" id="Costa-Rica" type="checkbox" name="country" value="Costa-Rica">
+                         <span class="form__cover-check"></span>
+                         Коста-Рика
+                       </label>
+                     </li>
+                     <li class="form__item">
+                       <label class="form__label form__label--check form__label--light" for="Peru">
+                         <input class="form__input-checkbox visually-hidden" id="Peru" type="checkbox" name="country" value="Peru">
+                         <span class="form__cover-check"></span>
+                         Перу
+                       </label>
+                     </li>
+                 </ul>
+             </fieldset>
+            </div>
+          <div class="form__wrapper-buttons">
+            <button class="form__button">Применить</button>
+            <button class="form__button form__button--reset">Сбросить</button>
+          </div>
           </form>
           <select class="select-control" aria-label="Сортировка:">
               <option value="default">По умолчанию</option>
