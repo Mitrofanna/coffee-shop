@@ -1,7 +1,19 @@
 .catalog {
   background-color: $color-base-grey;
   padding: 0 20px;
+
+  @media (min-width: $vp-1440) {
+    display: grid;
+    grid-template-areas:
+    "title title"
+    "heading  heading"
+    "form card-list"
+    "pagination pagination";
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: repeat(2, auto);
+  }
 }
+
 .catalog__title {
   margin: 0;
   font-size: 12px;
@@ -12,6 +24,9 @@
   text-align: center;
   padding: 50px 0 4px;
 
+  @media (min-width: $vp-1440) {
+    grid-area: title;
+  }
 }
 
 .catalog__heading {
@@ -25,6 +40,28 @@
   @media (min-width: $vp-768) {
     font-size: 42px;
     line-height: 64px;
+  }
+
+  @media (min-width: $vp-1440) {
+    grid-area: heading;
+  }
+}
+
+.catalog__form {
+  @media (min-width: $vp-1440) {
+    grid-area: form;
+  }
+}
+
+.catalog__sort-list {
+  @media (min-width: $vp-1440) {
+    grid-area: card-list;
+  }
+}
+
+.catalog__pagination {
+  @media (min-width: $vp-1440) {
+    grid-area: pagination;
   }
 }
 
