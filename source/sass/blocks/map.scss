@@ -1,0 +1,34 @@
+.map {
+  overflow: hidden;
+  position: relative;
+}
+
+.map__leaflet {
+  width: 100%;
+  height: 420px;
+
+  @media (min-width: $vp-768) {
+    height: 469px;
+  }
+
+  @media (min-width: $vp-1440) {
+    height: 540px;
+  }
+}
+
+.map__image {
+  object-fit: cover;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  @media (min-width: $vp-768) {
+    height: 469px;
+  }
+
+  @media (min-width: $vp-1440) {
+    height: 540px;
+  }
+}

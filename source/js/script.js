@@ -66,3 +66,40 @@ if (rangeSlider) {
 		});
 	});
 }
+
+//карта
+const map = L.map('map-leaflet')
+  .setView({
+    lat: 59.96831,
+    lng: 30.31748,
+  }, 18);
+
+L.tileLayer(
+  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+  {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  },
+).addTo(map);
+
+const mainPinIcon = L.icon({
+  iconUrl: '/../img/icons/stack.svg#map',
+  iconSize: [38, 50],
+  iconAnchor: [19, 50],
+});
+
+const mainPinMarker = L.marker(
+  {
+    lat: 59.96831,
+    lng: 30.31748,
+  },
+  {
+    draggable: true,
+    icon: mainPinIcon,
+  },
+);
+
+mainPinMarker.addTo(map);
+
+mainPinMarker.on('moveend', (evt) => {
+  console.log(evt.target.getLatLng());
+});

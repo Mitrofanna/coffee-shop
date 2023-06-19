@@ -67,4 +67,18 @@
   padding: 8px 20px;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    background-color: $color-blue;
+  }
+
+  &:active {
+    background-color: $color-dark-blue;
+  }
+
+  &:disabled {
+    background-color: $color-light-grey;
+  }
 }

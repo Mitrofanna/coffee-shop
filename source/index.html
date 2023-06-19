@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Drink2GO</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -434,7 +435,18 @@
               </li>
           </ul>
         </section>
-          <div class="map"></div>
+          <section class="map">
+            <h2 class="visually-hidden">Наш адрес на карте.</h2>
+            <div class="map__leaflet" id="map-leaflet"></div>
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/map-desktop.webp 1x, img/content/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map-tablet.webp 1x, img/content/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/map.webp 1x, img/content/map@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="./img/content/map-desktop.jpg 1x, ./img/content/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="./img/content/map-tablet.jpg 1x, ./img/content/map-tablet@2x.jpg 2x">
+              <img class="map__image" src="./img/content/map.jpg" srcset="./img/content/map@2x.jpg 2x" width="320" height="420" alt="Адрес магазина: Санкт-Петербург, набережная реки Карповки, дом 5.">
+            </picture>
+          </section>
           <footer class="page__footer footer">
               <div class="footer__info">
                   <a class="footer__logo" href="#">
@@ -445,22 +457,28 @@
                   </a>
                   <ul class="footer__social-list">
                       <li class="footer__social-item">
-                        <svg class="foter__social-icon" aria-hidden="true" focusable="false"  width="20" height="20">
-                          <use xlink:href="./img/icons/stack.svg#vk"></use>
-                        </svg>
-                        <span class="visually-hidden">Мы в Вконтакте.</span>
+                        <a class="footer__social-link" href="#">
+                          <svg class="footer__social-icon" aria-hidden="true" focusable="false"  width="20" height="20">
+                            <use xlink:href="./img/icons/stack.svg#vk"></use>
+                          </svg>
+                          <span class="visually-hidden">Мы в Вконтакте.</span>
+                        </a>
                       </li>
                       <li class="footer__social-item">
-                        <svg class="foter__social-icon" aria-hidden="true" focusable="false"  width="22" height="22">
-                          <use xlink:href="./img/icons/stack.svg#pinterest"></use>
-                        </svg>
-                        <span class="visually-hidden">Мы в Pinterest.</span>
+                        <a class="footer__social-link" href="#">
+                          <svg class="footer__social-icon" aria-hidden="true" focusable="false"  width="22" height="22">
+                            <use xlink:href="./img/icons/stack.svg#pinterest"></use>
+                          </svg>
+                          <span class="visually-hidden">Мы в Pinterest.</span>
+                        </a>
                       </li>
                       <li class="footer__social-item">
-                        <svg class="foter__social-icon" aria-hidden="true" focusable="false"  width="20" height="20">
-                          <use xlink:href="./img/icons/stack.svg#ok"></use>
-                        </svg>
-                          <span class="visually-hidden">Мы в одноклассниках.</span>
+                        <a class="footer__social-link" href="#">
+                          <svg class="footer__social-icon" aria-hidden="true" focusable="false"  width="20" height="20">
+                            <use xlink:href="./img/icons/stack.svg#ok"></use>
+                          </svg>
+                            <span class="visually-hidden">Мы в одноклассниках.</span>
+                        </a>
                       </li>
                   </ul>
           </div>
@@ -486,12 +504,12 @@
                 <h3 class="footer__title">Контакты</h3>
                 <ul class="footer__list">
                     <li class="footer__contact">
-                      <svg class="foter__contact-icon" aria-hidden="true" focusable="false"  width="13" height="16">
+                      <svg class="footer__contact-icon" aria-hidden="true" focusable="false"  width="13" height="16">
                         <use xlink:href="./img/icons/stack.svg#address"></use>
                       </svg>
                       Санкт-Петербург, набережная реки Карповки, дом 5</li>
                     <li class="footer__contact">
-                      <svg class="foter__contact-icon" aria-hidden="true" focusable="false"  width="13" height="16">
+                      <svg class="footer__contact-icon" aria-hidden="true" focusable="false"  width="13" height="16">
                         <use xlink:href="./img/icons/stack.svg#phone"></use>
                       </svg>
                       <a class="footer__phone" href="tel:+79999999999">+7 (999) 999-99-99</a>
@@ -501,12 +519,13 @@
           </div>
           <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="footer__copyright-text">Разработано в HTML Academy</span>
-            <svg class="foter__copyright-icon" aria-hidden="true" focusable="false"  width="12" height="16">
+            <svg class="footer__copyright-icon" aria-hidden="true" focusable="false"  width="12" height="16">
               <use xlink:href="./img/icons/stack.svg#logo-academy"></use>
             </svg>
           </a>
         </footer>
       </main>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
     <script src="./js/script.js" defer></script>

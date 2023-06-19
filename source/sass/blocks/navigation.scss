@@ -8,7 +8,6 @@
     }
   }
 
-
  @media (min-width: $vp-768) {
    margin-left: auto;
    padding-left: 170px;
@@ -40,6 +39,10 @@
   @media (min-width: $vp-768) {
     min-height: 80px;
   }
+
+  &:active {
+    background-color: $color-border;
+  }
 }
 
 .navigation__link {
@@ -68,6 +71,10 @@
   }
 }
 
+.navigation__item:hover .navigation__link-icon {
+  fill: $color-violet;
+}
+
 .navigation__list-menu {
   list-style-type: none;
   margin: 0;
@@ -91,6 +98,10 @@
   @media (max-width: $vp-767) {
     border-top: 1px solid $color-border;
     width: 100vw;
+  }
+
+  &:active {
+    background-color: $color-border;
   }
 }
 
@@ -119,6 +130,10 @@
 .navigation__link-active {
   @media (min-width: $vp-768) {
     color: $color-violet;
+  }
+
+  &:active {
+    background-color: $color-border;
   }
 }
 
