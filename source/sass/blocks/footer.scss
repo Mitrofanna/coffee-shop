@@ -1,3 +1,10 @@
+.footer {
+  @media (min-width: $vp-1440) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .footer__wrapper {
   @media (min-width: $vp-768){
     display: grid;
@@ -7,30 +14,58 @@
 }
 
 .footer__info {
-  bottom: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+  padding: 20px;
+
+  &--social {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
   @media (min-width: $vp-768) {
-    border: none;
+    border-bottom: none;
+
+    &--social {
+      padding: 40px 20px 30px;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    &--social {
+      flex-direction: column;
+    }
+
+    padding: 49px 
   }
 }
 
 .footer__title {
+  margin: 0;
   font-weight: 700;
   color: $color-violet;
-  margin-top: 20px;
   margin-bottom: 12px;
 }
 
 .footer__item {
   font-weight: 500;
   font-size: 12px;
-  line-height: 16px;;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  &:not(:last-child) {
+    padding-bottom: 20px;
+  }
 }
 
 .footer__social-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 60px 60px 60px;
+  gap: 20px;
 }
 
 .footer__list {
@@ -77,3 +112,74 @@
 .footer__copyright:active .footer__copyright-icon {
   fill: $color-dark-blue;
 }
+
+.footer__logo {
+  @media (min-width: $vp-768) {
+    width: 170px;
+    height: 36px;
+  }
+}
+
+.footer__logo-text {
+  display: none;
+
+  @media (min-width: $vp-1440) {
+    display: block;
+  }
+}
+
+.footer__contact {
+  position: relative;
+  padding-left: 20px;
+  &:not(:last-child) {
+    padding-bottom: 16px;
+  }
+}
+
+.footer__contact-address::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  width: 13px;
+  height: 16px;
+  background: url(../../img/icons/stack.svg#address) no-repeat center/cover;
+  display: block;
+}
+
+.footer__contact-phone::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  width: 13px;
+  height: 16px;
+  background: url(../../img/icons/stack.svg#phone) no-repeat center/cover;
+  display: block;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-family: inherit;
+  color: $color-grey;
+}
+
+.footer__copyright {
+  color: $color-light-grey;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px 0 30px;
+}
+
+.footer__phone {
+  text-decoration: none;
+  color: $color-grey;
+}
+
+.footer__info-copyright {
+  width: 206px;
+  margin: 0 auto;
+}
+
+
+
