@@ -47,7 +47,7 @@
             <p class="navigation__link-text">Корзина.</p>
           </a>
         </li>
-        <li class="navigation__item">
+        <li class="navigation__item navigation__item-button">
           <button class="navigation__link navigation__button" type="button">
             <span class="visually-hidden">Открыть/закрыть меню.</span>
           </button>
@@ -87,8 +87,8 @@
         </div>
         <div class="promo__text">
           <p class="promo__about">Новинка!</p>
-          <h2 class="promo__title">Декаф флэт уайт</h2>
-          <p class="promo__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+          <h2 class="promo__title">Декаф Флэт Уайт</h2>
+          <p class="promo__description">Свежесваренный кофе без кофеина из Эфиопии<span class="promo-space"><br></span> с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
           <div class="promo__wrapper">
             <span class="promo__price">295₽</span>
             <span class="promo__discount-price">225₽</span>
@@ -103,7 +103,7 @@
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/lavender-desktop.webp 1x, img/content/lavender-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/content/lavender-tablet.webp 1x, img/content/lavender-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/content/lavender.webp 1x, img/content/lavender@x2.webp 2x">
+            <source type="image/webp" srcset="img/content/lavender.webp 1x, img/content/lavender@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="./img/content/lavender-desktop.png 1x, ./img/content/lavender-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="./img/content/lavender-tablet.png 1x, ./img/content/lavender-tablet@2x.png 2x">
             <img class="promo__image" src="./img/content/lavender.png" srcset="./img/content/lavender@2x.png" width="280" height="280" alt="Кофейный напиток в сиреневой банке.">
@@ -127,7 +127,7 @@
           <picture>
             <source type="image/webp" media="(min-width: 1440px)" srcset="img/content/espresso-desktop.webp 1x, img/content/espresso-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/content/espresso-tablet.webp 1x, img/content/espresso-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/content/espresso.webp 1x, img/content/espresso@x2.webp 2x">
+            <source type="image/webp" srcset="img/content/espresso.webp 1x, img/content/espresso@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="./img/content/espresso-desktop.png 1x, ./img/content/espresso-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="./img/content/espresso-tablet.png 1x, ./img/content/espresso-tablet@2x.png 2x">
             <img class="promo__image" src="./img/content/espresso.png" srcset="./img/content/espresso@x2.png" width="280" height="280" alt="Кофейный напиток в черной банке.">
@@ -160,7 +160,7 @@
           </li>
           <li class="advantages__item advantages__item-comfort">
             <h3 class="advantages__point">Удобство</h3>
-            <p class="advantages__description">Легко помещается и в карман, и в маленькую сумочку</p>
+            <p class="advantages__description">Легко помещается и в карман,<br> и в маленькую сумочку</p>
           </li>
           <li class="advantages__item advantages__item-energy">
             <h3 class="advantages__point">Бодрость</h3>
@@ -168,7 +168,7 @@
           </li>
           <li class="advantages__item advantages__item-ecology">
             <h3 class="advantages__point">Экологичность</h3>
-            <p class="advantages__description">Вся упаковка сделана из перерабатываемых материалов</p>
+            <p class="advantages__description">Вся упаковка сделана<br> из перерабатываемых материалов</p>
           </li>
         </ul>
       </section>
@@ -177,23 +177,23 @@
           <h3 class="catalog__heading">Каталог кофейных напитков</h3>
           <form class="catalog__form form" action="https://echo.htmlacademy.ru">
             <div class="form__container">
-              <fieldset class="form__wrapper wrapper-price">
+              <fieldset class="form__wrapper form__wrapper-price">
                <legend class="form__title">Цена</legend>
-               <div class="form__price price" id="range-slider"></div>
-               <div class="price__inputs">
-                 <label class="price__label">
+               <div class="form__price" id="range-slider"></div>
+               <div class="form__price-inputs">
+                 <label class="form__price-label">
                    <span class="visually-hidden">от</span>
-                   <input type="number" class="price__input" id="input-min" min="0" max="1000" placeholder="0">
+                   <input type="number" class="form__price-input" id="input-min" min="0" max="1000" placeholder="0">
                  </label>
-                 <span class="price__separator">-</span>
-                 <label class="price__label">
+                 <span class="form__price-separator">-</span>
+                 <label class="form__price-label">
                    <span class="visually-hidden">до</span>
-                   <input type="number" class="price__input" id="input-max" min="0" max="1000" placeholder="900">
+                   <input type="number" class="form__price-input" id="input-max" min="0" max="1000" placeholder="900">
                   </label>
                </div>
               </fieldset>
               <fieldset class="form__wrapper">
-               <legend class="form__title">Наличие молока</legend>
+               <legend class="form__title form__title--milk">Наличие молока</legend>
                  <ul class="form__list">
                      <li class="form__item">
                        <label class="form__label" for="any-milk">
@@ -226,7 +226,7 @@
                  </ul>
              </fieldset>
              <fieldset class="form__wrapper">
-                 <legend class="form__title">Страна произрастания</legend>
+                 <legend class="form__title form__title--country">Страна произрастания</legend>
                  <ul class="form__list">
                      <li class="form__item">
                        <label class="form__label form__label--check" for="Brazil">
@@ -275,7 +275,7 @@
           <div class="catalog__sort">
             <label class="catalog__sort-label" for="select">Сортировка:</label>
             <select class="catalog__sort-select" id="select">
-                <option class="catalog__sort-option" value="default" selected>По умолчанию</option>
+                <option class="catalog__sort-option" value="default" selected>по умолчанию</option>
                 <option value="default">Сначала дорогие</option>
                 <option value="default">Сначала дешевые</option>
                 <option value="default">Высокий рейтинг</option>
@@ -292,7 +292,7 @@
               <a class="card-list__link" href="#">
                 <h3 class="card-list__title">Декаф Флэт Уайт</h3>
               </a>
-                <p class="card-list__description">Кофе без кофеина из Эфиопии
+                <p class="card-list__description">Кофе без кофеина из Эфиопии<br>
                       с натуральным фермерским молоком</p>
 
                   <span class="card-list__price">225₽</span>
@@ -313,7 +313,7 @@
                 <a class="card-list__link" href="#">
                   <h3 class="card-list__title">Декаф Флэт Уайт</h3>
                 </a>
-                <p class="card-list__description">Кофе без кофеина из Эфиопии
+                <p class="card-list__description">Кофе без кофеина из Эфиопии<br>
                         с натуральным фермерским молоком</p>
                 <span class="card-list__price">225₽</span>
                 <button class="card-list__button" type="button">
@@ -333,7 +333,7 @@
                 <a class="card-list__link" href="#">
                   <h3 class="card-list__title">Декаф Флэт Уайт</h3>
                 </a>
-                <p class="card-list__description">Кофе без кофеина из Эфиопии
+                <p class="card-list__description">Кофе без кофеина из Эфиопии<br>
                       с натуральным фермерским молоком
                 </p>
                 <span class="card-list__price">225₽</span>
@@ -354,7 +354,7 @@
                 <a class="card-list__link" href="#">
                   <h3 class="card-list__title">Декаф Флэт Уайт</h3>
                 </a>
-                <p class="card-list__description">Кофе без кофеина из Эфиопии
+                <p class="card-list__description">Кофе без кофеина из Эфиопии<br>
                       с натуральным фермерским молоком
                 </p>
                 <span class="card-list__price">225₽</span>
@@ -375,7 +375,7 @@
                 <a class="card-list__link" href="#">
                   <h3 class="card-list__title">Декаф Флэт Уайт</h3>
                 </a>
-                <p class="card-list__description">Кофе без кофеина из Эфиопии
+                <p class="card-list__description">Кофе без кофеина из Эфиопии<br>
                       с натуральным фермерским молоком
                 </p>
                 <span class="card-list__price">225₽</span>
@@ -396,7 +396,7 @@
                 <a class="card-list__link" href="#">
                   <h3 class="card-list__title">Декаф Флэт Уайт</h3>
                 </a>
-                <p class="card-list__description">Кофе без кофеина из Эфиопии
+                <p class="card-list__description">Кофе без кофеина из Эфиопии<br>
                       с натуральным фермерским молоком
                 </p>
                 <span class="card-list__price">225₽</span>
@@ -453,7 +453,7 @@
               <div class="footer__info footer__info--social">
                   <a class="footer__logo" href="#">
                     <picture>
-                      <source media="(min-width: 1440px)" srcset="img/icons/stack.svg#desktop-logo">
+                      <source media="(min-width: 768px)" srcset="img/icons/stack.svg#desktop-logo">
                       <img class="footer__logo" width="82" height="36" src="img/icons/stack.svg#logo-mini" alt="Логотип магазина.">
                     </picture>
                   </a>
@@ -517,7 +517,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer__info">
+            <div class="footer__info footer__info--contacts">
                 <h3 class="footer__title">Контакты</h3>
                 <ul class="footer__list">
                     <li class="footer__contact footer__contact-address">

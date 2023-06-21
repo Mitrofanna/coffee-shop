@@ -1,3 +1,4 @@
+//меню
 const nav = document.querySelector('.navigation');
 const navToggle = document.querySelector('.navigation__button');
 
@@ -28,7 +29,6 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-
 });
 
 //Рэндж слайдер для цены

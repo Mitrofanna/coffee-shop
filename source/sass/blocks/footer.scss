@@ -16,7 +16,6 @@
   @media (min-width: $vp-768){
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 30px;
   }
 
   @media (min-width: $vp-1440) {
@@ -29,17 +28,22 @@
   padding: 20px;
 
   &--social {
-    padding: 20px;
+    padding: 21px 20px 13px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
+  &--contacts {
+    padding: 20px 20px 10px;
+  }
+
   @media (min-width: $vp-768) {
     border-bottom: none;
+    padding: 20px 17px 20px;
 
     &--social {
-      padding: 40px 20px 30px;
+      padding: 50px 20px 5px;
     }
   }
 
@@ -55,9 +59,10 @@
 
 .footer__title {
   margin: 0;
+  font-size: 14px;
   font-weight: 700;
   color: $color-violet;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .footer__item {
@@ -76,15 +81,15 @@
   padding: 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: 60px 60px 60px;
-  gap: 20px;
+  grid-template-columns: 47px 47px 47px;
+  gap: 10px;
 }
 
 .footer__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .footer__social-icon {
@@ -151,7 +156,8 @@
 .footer__contact-address::before {
   content: "";
   position: absolute;
-  left: -6px;
+  left: 0;
+  top: 1px;
   width: 13px;
   height: 16px;
   background: url("../../img/icons/stack.svg#address") no-repeat center/cover;
@@ -161,7 +167,8 @@
 .footer__contact-phone::before {
   content: "";
   position: absolute;
-  left: -6px;
+  left: 0;
+  top: 1px;
   width: 13px;
   height: 16px;
   background: url("../../img/icons/stack.svg#phone") no-repeat center/cover;

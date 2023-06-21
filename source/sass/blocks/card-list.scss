@@ -2,12 +2,13 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin: 16px 20px 0 20px;
+  margin-top: 16px;
 
   @media (min-width: $vp-768) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 32px;
+    margin-top: 22px;
   }
 
   @media (min-width: $vp-1440) {
@@ -16,11 +17,11 @@
 }
 
 .card-list__item {
-  text-align: center;
+  text-align: start;
   background-color: $color-white;
   padding: 40px 20px 20px;
   border-radius: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   @media (min-width: $vp-768) {
     padding: 50px 30px 30px;
@@ -37,11 +38,17 @@
   text-decoration: none;
 }
 
+.card-list__image {
+  display: block;
+  width: 130px;
+  margin: 0 auto;
+}
+
 .card-list__title {
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
-  margin-top: 24px;
+  margin-top: 20px;
   margin-bottom: 4px;
 
   @media (min-width: $vp-768) {
@@ -53,6 +60,7 @@
 }
 
 .card-list__description {
+  margin: 0;
   margin-bottom: 16px;
 
   @media (min-width: $vp-768) {
@@ -64,10 +72,16 @@
   font-size: 20px;
   line-height: 32px;
   font-weight: 600;
-  margin-right: 50px;
+  margin-right: 45px;
+
+  @media (min-width: $vp-768) {
+    margin-right: 92px;
+  }
 }
 
 .card-list__button {
+  font-family: inherit;
+  width: 140px;
   color: $color-white;
   background-color: $color-violet;
   padding: 8px 20px;

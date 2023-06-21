@@ -8,7 +8,7 @@
 .form__container {
   @media (min-width: $vp-768) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 223px 222px 223px;
     gap: 30px;
   }
 
@@ -21,12 +21,23 @@
 
 .form__title {
   margin: 0;
+  padding: 0;
+  font-size: 16px;
   line-height: 24px;
-  font-size: 600;
-  padding-bottom: 20px;
+  font-weight: 600;
+  padding-bottom: 28px;
+
+  &--milk {
+    padding-bottom: 20px;
+  }
+
+  &--country {
+    padding-bottom: 20px;
+  }
 }
 
 .form__label {
+  font-size: 16px;
   line-height: 24px;
   padding-left: 34px;
   cursor: pointer;
@@ -35,13 +46,13 @@
   }
 
   &--check {
-    padding-left: 50px;
+    padding-left: 55px;
   }
 }
 
 .form__wrapper-buttons {
   padding-top: 30px;
-  padding-bottom: 44px;
+  padding-bottom: 35px;
   max-width: 400px;
   margin: 0 auto;
   display: flex;
@@ -52,6 +63,8 @@
   @media (min-width: $vp-768) {
     display: flex;
     flex-direction: row;
+    width: 277px;
+    padding-top: 37px;
   }
 
   @media (min-width: $vp-1440) {
@@ -61,6 +74,7 @@
 
 .form__button {
   font-family: inherit;
+  font-size: 16px;
   line-height: 24px;
   color: $color-white;
   background-color: $color-violet;
@@ -127,11 +141,11 @@
   margin: 0;
   padding: 0;
   &:nth-child(1) {
-    margin-bottom: 34px;
+    margin-bottom: 29px;
   }
 
   &:nth-child(2) {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
   }
 }
 
@@ -222,7 +236,42 @@
   opacity: 0.3;
 }
 
-.wrapper-price {
-  width: 280px;
-  height: 132px;
+.form__wrapper-price {
+  max-width: 280px;
+  max-height: 132px;
+}
+
+.form__price-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 33px;
+}
+
+.form__price-input {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding: 8px 10px;
+  width: 118px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 2px solid $color-blue;
+  border-radius: 4px;
+
+  @media (min-width: $vp-768) {
+    width: 87px;
+  }
+
+  &:active,
+  &:focus,
+  &:hover {
+    border-color: $color-dark-blue;
+    outline: none;
+  }
+
+  &:disabled {
+    border-color: $color-light;
+  }
 }

@@ -85,7 +85,7 @@
     display: flex;
     flex-wrap: wrap;
     order: -1;
-    padding-right: 20px;
+    padding-right: 83px;
   }
 
   @media (min-width: $vp-1440) {
@@ -189,5 +189,11 @@
     display: block;
     right: 35px;
     background: url("../../img/icons/stack.svg#menu-close") no-repeat center;
+  }
+}
+
+.navigation__item-button {
+  @media (min-width: $vp-768) {
+    display: none;
   }
 }

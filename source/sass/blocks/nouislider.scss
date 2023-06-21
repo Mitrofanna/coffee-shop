@@ -6,6 +6,10 @@
   height: 4px;
   width: 280px;
   background: $color-light;
+
+  @media (min-width: $vp-768) {
+    width: 223px;
+  }
 }
 
 .noUi-connect {
