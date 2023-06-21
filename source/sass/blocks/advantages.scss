@@ -2,13 +2,16 @@
   max-width: 400px;
   margin: 0 auto;
   text-align: center;
+  padding: 0 20px;
 
   @media (min-width: $vp-768) {
     max-width: 1000px;
+    padding: 0 30px;
   }
 
   @media (min-width: $vp-1440) {
     max-width: 1400px;
+    padding: 0 40px;
   }
 }
 
@@ -16,15 +19,19 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-bottom: 60px;
+
   @media (min-width: $vp-768) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 50px;
     column-gap: 30px;
+    margin-bottom: 100px;
   }
 
   @media (min-width: $vp-1440) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 120px;
   }
 }
 
@@ -49,6 +56,11 @@
   @media (min-width: $vp-768) {
     font-size: 42px;
     line-height: 64px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-bottom: 80px;
   }
 }
 
@@ -75,11 +87,97 @@
 }
 
 .advantages__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-top: 66px;
+
+  @media (min-width: $vp-768) {
+    padding-left: 62px;
+    padding-top: 0;
+    text-align: start;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding-left: 0;
+    padding-top: 76px;
+    text-align: center;
+  }
 }
 
-.advantages__image {
-  margin: 0 auto;
+.advantages__item-speed::before {
+  position: absolute;
+  display: block;
+    top: 0px;
+    left: calc(50% - 26px);
+    content: "";
+    background: url("../../img/icons/stack.svg#speed");
+    width: 52px;
+    height: 56px;
+
+    @media (min-width: $vp-768) {
+      left: 0;
+    }
+
+    @media (min-width: $vp-1440) {
+      left: calc(50% - 26px);
+    }
+}
+
+.advantages__item-comfort::before {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: calc(50% - 26px);
+    content: "";
+    background: url("../../img/icons/stack.svg#comfort");
+    width: 52px;
+    height: 56px;
+
+    @media (min-width: $vp-768) {
+      left: 0;
+    }
+
+    @media (min-width: $vp-1440) {
+      left: calc(50% - 26px);
+    }
+}
+
+.advantages__item-energy::before {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: calc(50% - 26px);
+    content: "";
+    background: url("../../img/icons/stack.svg#energy");
+    width: 52px;
+    height: 56px;
+
+    @media (min-width: $vp-768) {
+      left: 0;
+    }
+
+    @media (min-width: $vp-1440) {
+      left: calc(50% - 26px);
+    }
+}
+
+.advantages__item-ecology::before {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: calc(50% - 26px);
+    content: "";
+    background: url("../../img/icons/stack.svg#ecology");
+    width: 52px;
+    height: 56px;
+
+    @media (min-width: $vp-768) {
+      left: 0;
+    }
+
+    @media (min-width: $vp-1440) {
+      left: calc(50% - 26px);
+    }
 }

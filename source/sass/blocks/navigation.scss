@@ -35,6 +35,7 @@
   min-width: 60px;
   min-height: 60px;
   box-sizing: border-box;
+  cursor: pointer;
 
   @media (min-width: $vp-768) {
     min-height: 80px;
@@ -94,6 +95,7 @@
 
 .navigation__item-menu {
   display: inline-flex;
+  cursor: pointer;
 
   @media (max-width: $vp-767) {
     border-top: 1px solid $color-border;
@@ -151,6 +153,7 @@
 
 .navigation__button {
   position: absolute;
+  cursor: pointer;
   top: 22px;
   right: 22px;
   padding: 0;
@@ -184,6 +187,7 @@
 .navigation--open .navigation__button {
   @media (max-width: $vp-767) {
     display: block;
+    right: 35px;
     background: url("../../img/icons/stack.svg#menu-close") no-repeat center;
   }
 }

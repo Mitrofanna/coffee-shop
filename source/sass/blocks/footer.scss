@@ -1,7 +1,14 @@
 .footer {
-  @media (min-width: $vp-1440) {
-    display: flex;
-    flex-wrap: wrap;
+  @media (min-width: $vp-1440){
+    display: grid;
+    grid-template-areas:
+    "social info"
+    "logo  logo";
+
+    grid-template-rows: auto auto;
+    grid-template-columns: 318px auto;
+
+    column-gap: 30px;
   }
 }
 
@@ -10,6 +17,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 30px;
+  }
+
+  @media (min-width: $vp-1440) {
+    grid-area: info;
   }
 }
 
@@ -35,9 +46,10 @@
   @media (min-width: $vp-1440) {
     &--social {
       flex-direction: column;
+      grid-area: social;
     }
 
-    padding: 49px 
+    padding: 49px
   }
 }
 
@@ -142,7 +154,7 @@
   left: -6px;
   width: 13px;
   height: 16px;
-  background: url(../../img/icons/stack.svg#address) no-repeat center/cover;
+  background: url("../../img/icons/stack.svg#address") no-repeat center/cover;
   display: block;
 }
 
@@ -152,7 +164,7 @@
   left: -6px;
   width: 13px;
   height: 16px;
-  background: url(../../img/icons/stack.svg#phone) no-repeat center/cover;
+  background: url("../../img/icons/stack.svg#phone") no-repeat center/cover;
   display: block;
 }
 
@@ -160,6 +172,15 @@
   text-decoration: none;
   font-family: inherit;
   color: $color-grey;
+
+  &:focus,
+  &:hover {
+   color: $color-blue;
+  }
+
+  &:active {
+    color: $color-blue;
+  }
 }
 
 .footer__copyright {
@@ -174,12 +195,22 @@
 .footer__phone {
   text-decoration: none;
   color: $color-grey;
+
+  &:focus,
+  &:hover {
+    color: $color-blue;
+  }
+
+  &:active {
+    color: $color-dark-blue;
+  }
 }
 
 .footer__info-copyright {
   width: 206px;
   margin: 0 auto;
+
+  @media (min-width: $vp-1440) {
+    grid-area: logo;
+  }
 }
-
-
-

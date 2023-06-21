@@ -3,14 +3,15 @@
   padding: 0 20px;
 
   @media (min-width: $vp-1440) {
+    padding: 0 40px;
     display: grid;
     grid-template-areas:
     "title title"
     "heading  heading"
     "form card-list"
     "pagination pagination";
-  grid-template-rows: repeat(4, auto);
-  grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(2, auto);
   }
 }
 
@@ -69,6 +70,9 @@
   display: grid;
   grid-template-columns: min-content 165px;
   column-gap: 10px;
+  padding: 0 20px 16px 0;
+  max-width: 280px;
+  margin-left: auto;
 }
 
 .catalog__sort-select {

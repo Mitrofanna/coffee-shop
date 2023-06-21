@@ -154,31 +154,19 @@
       <h2 class="advantages__title">Преимущества</h2>
       <h2 class="advantages__heading">Главные причины выбрать Drink2Go</h2>
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item--speed">
-            <svg class="advantages__image" aria-hidden="true" focusable="false"  width="52" height="56">
-              <use xlink:href="./img/icons/stack.svg#speed"></use>
-            </svg>
+          <li class="advantages__item advantages__item-speed">
             <h3 class="advantages__point">Скорость</h3>
             <p class="advantages__description">Готовый напиток всегда под рукой — просто открой банку</p>
           </li>
           <li class="advantages__item advantages__item-comfort">
-            <svg class="advantages__image" aria-hidden="true" focusable="false"  width="52" height="56">
-              <use xlink:href="./img/icons/stack.svg#comfort"></use>
-            </svg>
             <h3 class="advantages__point">Удобство</h3>
             <p class="advantages__description">Легко помещается и в карман, и в маленькую сумочку</p>
           </li>
-          <li class="advantages__item advantages__item-fresh">
-            <svg class="advantages__image" aria-hidden="true" focusable="false"  width="42" height="56">
-              <use xlink:href="./img/icons/stack.svg#energy"></use>
-            </svg>
+          <li class="advantages__item advantages__item-energy">
             <h3 class="advantages__point">Бодрость</h3>
             <p class="advantages__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
           </li>
           <li class="advantages__item advantages__item-ecology">
-            <svg class="advantages__image" aria-hidden="true" focusable="false"  width="46" height="56">
-              <use xlink:href="./img/icons/stack.svg#list"></use>
-            </svg>
             <h3 class="advantages__point">Экологичность</h3>
             <p class="advantages__description">Вся упаковка сделана из перерабатываемых материалов</p>
           </li>
@@ -187,7 +175,7 @@
       <section class="catalog">
           <h2 class="catalog__title">Каталог</h2>
           <h3 class="catalog__heading">Каталог кофейных напитков</h3>
-          <form class="catalog__form form">
+          <form class="catalog__form form" action="https://echo.htmlacademy.ru">
             <div class="form__container">
               <fieldset class="form__wrapper wrapper-price">
                <legend class="form__title">Цена</legend>
@@ -229,8 +217,8 @@
                        </label>
                      </li>
                      <li class="form__item">
-                       <label class="form__label form__label--light" for="no-milk">
-                         <input class="form__input-radio visually-hidden" id="no-milk" type="radio" name="type-of-milk" value="no-milk">
+                       <label class="form__label form__label--disabled" for="no-milk">
+                         <input class="form__input-radio visually-hidden" id="no-milk" type="radio" name="type-of-milk" value="no-milk"disabled>
                          <span class="form__cover"></span>
                          Без молока
                        </label>
@@ -269,8 +257,8 @@
                        </label>
                      </li>
                      <li class="form__item">
-                       <label class="form__label form__label--check form__label--light" for="Peru">
-                         <input class="form__input-checkbox visually-hidden" id="Peru" type="checkbox" name="country" value="Peru">
+                       <label class="form__label form__label--check form__label--disabled" for="Peru">
+                         <input class="form__input-checkbox visually-hidden" id="Peru" type="checkbox" name="country" value="Peru" disabled>
                          <span class="form__cover-check"></span>
                          Перу
                        </label>
@@ -279,8 +267,8 @@
              </fieldset>
             </div>
           <div class="form__wrapper-buttons">
-            <button class="form__button">Применить</button>
-            <button class="form__button form__button--reset">Сбросить</button>
+            <button class="form__button" type="submit">Применить</button>
+            <button class="form__button form__button--reset" type="reset">Сбросить</button>
           </div>
           </form>
           <div class="catalog__card-list">
@@ -308,7 +296,7 @@
                       с натуральным фермерским молоком</p>
 
                   <span class="card-list__price">225₽</span>
-                  <button class="card-list__button">
+                  <button class="card-list__button" type="button">
                     <svg class="card-list__icon" aria-hidden="true" focusable="false"  width="20" height="16">
                       <use xlink:href="./img/icons/stack.svg#cart-button"></use>
                     </svg>
@@ -328,7 +316,7 @@
                 <p class="card-list__description">Кофе без кофеина из Эфиопии
                         с натуральным фермерским молоком</p>
                 <span class="card-list__price">225₽</span>
-                <button class="card-list__button">
+                <button class="card-list__button" type="button">
                   <svg class="card-list__icon" aria-hidden="true" focusable="false"  width="20" height="16">
                     <use xlink:href="./img/icons/stack.svg#cart-button"></use>
                   </svg>
@@ -349,7 +337,7 @@
                       с натуральным фермерским молоком
                 </p>
                 <span class="card-list__price">225₽</span>
-                <button class="card-list__button">
+                <button class="card-list__button" type="button">
                   <svg class="card-list__icon" aria-hidden="true" focusable="false"  width="20" height="16">
                     <use xlink:href="./img/icons/stack.svg#cart-button"></use>
                   </svg>
@@ -370,7 +358,7 @@
                       с натуральным фермерским молоком
                 </p>
                 <span class="card-list__price">225₽</span>
-                <button class="card-list__button">
+                <button class="card-list__button" type="button">
                   <svg class="card-list__icon" aria-hidden="true" focusable="false"  width="20" height="16">
                     <use xlink:href="./img/icons/stack.svg#cart-button"></use>
                   </svg>
@@ -391,7 +379,7 @@
                       с натуральным фермерским молоком
                 </p>
                 <span class="card-list__price">225₽</span>
-                <button class="card-list__button">
+                <button class="card-list__button" type="button">
                   <svg class="card-list__icon" aria-hidden="true" focusable="false"  width="20" height="16">
                     <use xlink:href="./img/icons/stack.svg#cart-button"></use>
                   </svg>
@@ -412,7 +400,7 @@
                       с натуральным фермерским молоком
                 </p>
                 <span class="card-list__price">225₽</span>
-                <button class="card-list__button">
+                <button class="card-list__button" type="button">
                   <svg class="card-list__icon" aria-hidden="true" focusable="false"  width="20" height="16">
                     <use xlink:href="./img/icons/stack.svg#cart-button"></use>
                   </svg>
@@ -422,8 +410,11 @@
             </ul>
           </div>
             <ul class="catalog__pagination pagination">
-              <li class="pagination__item">
+              <li class="pagination__item pagination__item--back">
                   <a class="pagination__link" href="#">
+                    <svg class="pagination__icon" aria-hidden="true" focusable="false" aria-label="Логотип HTML Academy."  width="10" height="10">
+                      <use xlink:href="./img/icons/stack.svg#arrow"></use>
+                    </svg>
                     <span class="pagination__show">Назад</span>
                   </a>
                 </li>
@@ -436,8 +427,11 @@
               <li class="pagination__item">
                   <a class="pagination__link" href="#">3</a>
               </li>
-              <li class="pagination__item">
+              <li class="pagination__item pagination__item--next">
                   <a class="pagination__link" href="#">
+                    <svg class="pagination__icon pagination__icon--next" aria-hidden="true" focusable="false" aria-label="Логотип HTML Academy."  width="10" height="10">
+                      <use xlink:href="./img/icons/stack.svg#arrow"></use>
+                    </svg>
                     <span class="pagination__show">Вперед</span>
                   </a>
               </li>
@@ -462,11 +456,11 @@
                       <source media="(min-width: 1440px)" srcset="img/icons/stack.svg#desktop-logo">
                       <img class="footer__logo" width="82" height="36" src="img/icons/stack.svg#logo-mini" alt="Логотип магазина.">
                     </picture>
-                    <p class="footer__logo-text">Интернет-магазин кофейных напитков</p>
                   </a>
+                  <p class="footer__logo-text">Интернет-магазин кофейных напитков</p>
                   <ul class="footer__social-list">
                       <li class="footer__social-item">
-                        <a class="footer__social-link" href="#">
+                        <a class="footer__social-link" href="https://vk.com/htmlacademy">
                           <svg class="footer__social-icon" aria-hidden="true" focusable="false"  width="20" height="20">
                             <use xlink:href="./img/icons/stack.svg#vk"></use>
                           </svg>
@@ -545,9 +539,9 @@
           </div>
         </footer>
       </main>
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js" defer></script>
     <script src="./js/script.js" defer></script>
   </body>
 </html>
