@@ -15,6 +15,7 @@ import { deleteAsync } from 'del';
 import browser from 'browser-sync';
 import bemlinter from 'gulp-html-bemlinter';
 import { htmlValidator } from "gulp-w3c-html-validator";
+import ghPages from "gulp-gh-pages";
 
 const sass = gulpSass(dartSass);
 let isDevelopment = true;
@@ -104,6 +105,10 @@ export function startServer (done) {
   });
   done();
 }
+
+gulp.task("deploy", function () {
+  return gulp.src("./build/**/*").pipe(ghPages());
+});
 
 function reloadServer (done) {
   browser.reload();
