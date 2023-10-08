@@ -7,8 +7,9 @@
 
 .form__container {
   @media (min-width: $vp-768) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 223px 222px 223px;
+    gap: 30px;
   }
 
   @media (min-width: $vp-1440) {
@@ -163,8 +164,8 @@
 .form__input-radio:checked + .form__cover::before {
   content: "";
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 3px;
+  left: 2.5px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -273,8 +274,4 @@
   &:disabled {
     border-color: $color-light;
   }
-}
-
-.form__price-separator {
-  padding-top: 10px;
 }
