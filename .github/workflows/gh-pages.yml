@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     name: Deploy
@@ -23,9 +26,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      # - name: Run checks
-      #   run: npm run lint
 
       - name: Build project
         run: npm run build
